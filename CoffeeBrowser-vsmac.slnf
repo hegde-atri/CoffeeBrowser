@@ -1,0 +1,13 @@
+{
+  "solution": {
+    "path": "CoffeeBrowser.sln",
+    "projects": [
+		"CoffeeBrowser.Shared\\CoffeeBrowser.Shared.shproj",
+
+
+		"CoffeeBrowser.Wasm\\CoffeeBrowser.Wasm.csproj",
+
+		"CoffeeBrowser.Skia.Gtk\\CoffeeBrowser.Skia.Gtk.csproj",
+    ]
+  }
+}

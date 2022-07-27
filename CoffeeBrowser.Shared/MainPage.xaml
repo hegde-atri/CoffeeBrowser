@@ -1,0 +1,51 @@
+<Page
+    x:Class="CoffeeBrowser.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:CoffeeBrowser"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"    
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        
+        <!--Header-->
+        <Border Grid.ColumnSpan="2" Background="#f05a28">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="2">
+                <Image/>
+                <TextBlock Text="Coffee Browser" FontSize="30"/>
+            </StackPanel>            
+        </Border>
+        
+        <!--CoffeeList-->
+        <ListView Grid.Row="1">
+            <ListViewItem>Capuccino</ListViewItem>
+            <ListViewItem>Espresso</ListViewItem>
+        </ListView>
+        
+        <!--CoffeeDetails-->
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <TextBox Header="Name" Margin="10" IsReadOnly="True"/>
+            <TextBox Grid.Row="1" Header="Description" Margin="10" IsReadOnly="True"/>
+            <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0 0 0 10">
+                <Button Content="Previous" Margin="10"/>
+                <Button Content="Next" Margin="0 10 10 10"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

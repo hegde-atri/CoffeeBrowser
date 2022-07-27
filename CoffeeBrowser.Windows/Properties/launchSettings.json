@@ -1,0 +1,10 @@
+{
+	"profiles": {
+		"CoffeeBrowser.Windows (Package)": {
+			"commandName": "MsixPackage"
+		},
+		"CoffeeBrowser.Windows (Unpackaged)": {
+			"commandName": "Project"
+		}
+	}
+}
